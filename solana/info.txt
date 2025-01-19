@@ -1,0 +1,27 @@
+- Solana accounts contain either:
+  . State: This is data that's meant to be read from and persisted. It could be information 
+    about tokens, user data, or any other type of data defined within a program.
+  . Executable Programs: These are accounts that contain the actual code of Solana programs. 
+    They contain the instructions that can be executed on the network.
+
+- Types Of Fees on Solana
+ .  Transaction Fees - A fee to have validators process transactions/instructions
+ .  Prioritization Fees - An optional fee to boost transactions processing order
+ .  Rent - A withheld balance to keep data stored on-chain
+
+Program Derived Addresses (PDAs) provide developers on Solana with two main use cases:
+. Deterministic Account Addresses: PDAs provide a mechanism to deterministically derive an address 
+  using a combination of optional "seeds" (predefined inputs) and a specific program ID.
+. Enable Program Signing: The Solana runtime enables programs to "sign" for PDAs which are 
+  derived from its program ID.
+- You can think of PDAs as a way to create hashmap-like structures on-chain from a 
+  predefined set of inputs (e.g. strings, numbers, and other account addresses).
+
+Cross Program Invocation #
+  . A Cross Program Invocation (CPI) refers to when one program invokes the instructions of 
+    another program. This mechanism allows for the composability of Solana programs.
+  . You can think of instructions as API endpoints that a program exposes to the network 
+    and a CPI as one API internally invoking another API.
+
+
+

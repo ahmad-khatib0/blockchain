@@ -1,3 +1,8 @@
+.anchor
+**/*.rs.bk
+test-ledger
+.yarn
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
