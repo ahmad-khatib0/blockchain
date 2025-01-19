@@ -1,0 +1,14 @@
+# set to localhost
+$ solana config set --url localhost
+
+# set to devnet
+$ solana config set --url devnet
+
+$ solana address
+
+# get account details 
+$ solana account <address>
+
+# start the local network
+$ solana-test-validator
+
