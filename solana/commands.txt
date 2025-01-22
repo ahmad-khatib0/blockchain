@@ -12,3 +12,5 @@ $ solana account <address>
 # start the local network
 $ solana-test-validator
 
+$ solana test --skip-local-validator --skip-deploy
+
